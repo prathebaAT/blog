@@ -11,19 +11,19 @@
    <div class = "container">
 <h1>Blog Page</h1>
     
-<form action="#" method="post">
+<form action="/submit-blog" method="post">
     <label>Author Name </label>
-    <input type="text" placeholder="Enter your Author name" id ="auth_name">
+    <input type="text" placeholder="Enter your Author name" name ="authname">
 
 <br>
     <label>Blog Title </label>
-    <input type="text" placeholder="Enter your Blog Title" id ="blog_name">
+    <input type="text" placeholder="Enter your Blog Title" name ="blogname">
 <br>
     <label>Blog Content </label>
-    <input type="text" placeholder="Enter your Blog Content" id="blog_des">
+    <input type="text" placeholder="Enter your Blog Content" name="blogdes">
 <br>
     <label>Date</label>
-    <input type ="date" class="dateField" id="created_dt" readonly>
+    <input type ="date" class="dateField" name="createddt" readonly>
 <br>
 <input type = "submit" value="Submit">
 
