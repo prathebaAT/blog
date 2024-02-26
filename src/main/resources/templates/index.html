@@ -5,6 +5,7 @@
     <link href = "css/styles.css" rel = "stylesheet"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>   <!-- <script type="text/javascript" th:src="@{/index.js}"></script> -->
+    <!-- <script src="/script.js" th:src="@{/script.js}"></script> -->
 </head>
 <body>
      
@@ -32,18 +33,18 @@
 </form>
 </div>
 <script>
-var today = new Date();
-    var dd = String(today.getDate()).padStart(2, '0');
-    var mm = String(today.getMonth() + 1).padStart(2, '0'); 
-    var yyyy = today.getFullYear();
-
-    today = yyyy + '-' + mm + '-' + dd;
-
+    var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); 
+        var yyyy = today.getFullYear();
     
-    var dateFields = document.getElementsByClassName("dateField"); 
-    for (var i = 0; i < dateFields.length; i++) {
-        dateFields[i].value = today;
-    }
-</script>   
+        today = yyyy + '-' + mm + '-' + dd;
+    
+        
+        var dateFields = document.getElementsByClassName("dateField"); 
+        for (var i = 0; i < dateFields.length; i++) {
+            dateFields[i].value = today;
+        }
+    </script>   
 </body>
 </html>
