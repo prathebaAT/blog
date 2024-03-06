@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Listing Page</title>
+    <title>View Blogs</title>
 </head>
 <body>
-    <h1>The blog is submiited</h1>;
-    
+    <h1>View Blogs</h1>
+    <table>
+        <tr>
+            <th>Author</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Date</th>
+        </tr>
+        <!-- Iterate through blogs and display each one -->
+        <tr th:each="blog : ${blogs}">
+            <td th:text="${blog.authName}"></td>
+            <td th:text="${blog.blogname}"></td>
+            <td th:text="${blog.blogdes}"></td>
+            <td th:text="${blog.createddt}"></td>
+        </tr>
+    </table>
 </body>
 </html>

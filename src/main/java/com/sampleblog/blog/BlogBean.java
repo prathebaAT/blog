@@ -3,10 +3,30 @@ import java.util.Date;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+
+@Entity
+@Table(name = "blogs") 
 public class BlogBean {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    
+    public Long getId() {
+        return id;
+    }
 
-    private String authName;
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    private String authname;
     private String blogname;
     private String blogdes;
 
@@ -38,12 +58,12 @@ public class BlogBean {
 
 
 
-    public String getAuthName() {
-        return authName;
+    public String getAuthname() {
+        return authname;
     }
 
-    public void setAuthName(String authName) {
-        this.authName = authName;
+    public void setAuthname(String authname) {
+        this.authname = authname;
     }
 }
     
