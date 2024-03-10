@@ -9,15 +9,15 @@ import jakarta.annotation.PostConstruct;
 @SpringBootApplication
 public class BlogApplication {
 	    
-	@Autowired
-    private DataRetriever dataRetriever;
+	// @Autowired
+    // private DataRetriever dataRetriever;
 
 	public static void main(String[] args) {
 		SpringApplication.run(BlogApplication.class, args);
 	}
-	@PostConstruct
-    public void init() {
-        dataRetriever.printAllBlogs();
-    }
+	// @PostConstruct
+    // public void init() {
+    //     dataRetriever.printAllBlogs();
+    // }
 
 }
