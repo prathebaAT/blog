@@ -24,9 +24,9 @@
     <label>Blog Content </label>
     <input type="text" placeholder="Enter your Blog Content" name="blogdes" required> 
 <br>
-    <label>Date</label>
+    <!-- <label>Date</label>
     <input type ="date" class="dateField" name="createddt" readonly>
-<br>
+<br> -->
 <input type = "submit" value="Submit">
 <br>
 <a th:href="@{/view-blogs}">View Blogs</a>
@@ -37,7 +37,7 @@
 
 </form>
 </div>
-<script>
+<!-- <script>
     var today = new Date();
         var dd = String(today.getDate()).padStart(2, '0');
         var mm = String(today.getMonth() + 1).padStart(2, '0'); 
@@ -50,6 +50,6 @@
         for (var i = 0; i < dateFields.length; i++) {
             dateFields[i].value = today;
         }
-    </script>   
+    </script>    -->
 </body>
 </html>

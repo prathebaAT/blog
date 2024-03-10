@@ -33,7 +33,7 @@ public class BlogController {
         blogRepository.save(blog);
         // Add flash attribute to indicate successful saving
         redirectAttributes.addFlashAttribute("message", "Blog saved successfully");
-        return "redirect:/index";
+        return "index";
     }
     @GetMapping("/view-blogs")
     public String viewBlogs(Model model) {
