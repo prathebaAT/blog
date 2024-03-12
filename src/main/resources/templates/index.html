@@ -27,6 +27,16 @@
     <!-- <label>Date</label>
     <input type ="date" class="dateField" name="createddt" readonly>
 <br> -->
+
+    <label for="category">Category:</label>
+    <select id="category" name="category" required>
+        <option value="">Select Category</option>
+        <option value="technology">Technology</option>
+        <option value="travel">Travel</option>
+        <option value="food">Food</option>
+        <!-- Add more options as needed -->
+    </select>
+
 <input type = "submit" value="Submit">
 <br>
 <a th:href="@{/view-blogs}">View Blogs</a>
